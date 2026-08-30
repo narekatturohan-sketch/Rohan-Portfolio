@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Rohan Mathew — Backend Software Engineer portfolio. Python, FastAPI, Oracle, REST APIs and legacy modernization.">
+  <title>Rohan Mathew | Backend Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">RJM<span>.</span></a>
+    <button class="menu" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <canvas id="python-canvas" aria-hidden="true"></canvas>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">BACKEND SOFTWARE ENGINEER</p>
+        <h1>Building modern backend systems from <span>legacy foundations.</span></h1>
+        <p class="lead">
+          Software Engineer focused on Python, FastAPI, REST APIs and Oracle,
+          with 2 years of production experience building depository account
+          systems in PL/SQL and Pro*C — now building the same systems in Python.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#experience">Explore my experience <span>↓</span></a>
+          <a class="btn secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="quick-stats">
+          <div><strong>Backend</strong><span>Python · FastAPI</span></div>
+          <div><strong>BFSI</strong><span>Depository systems</span></div>
+          <div><strong>Modernization</strong><span>Pro*C → Python</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="terminal">
+          <div class="terminal-bar"><i></i><i></i><i></i><span>backend.py</span></div>
+          <pre><code><span class="kw">class</span> <span class="fn">AccountService</span>:
+    <span class="kw">def</span> <span class="fn">create_account</span>(self, data):
+        account = self.repo.create(data)
+        <span class="kw">return</span> account
+
+<span class="decor"># same domain, modern stack</span>
+<span class="arrow">→</span> Pro*C / PL/SQL
+<span class="arrow">→</span> FastAPI
+<span class="arrow">→</span> Oracle</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Engineering with a modernization mindset.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="big-copy reveal">
+          I work on backend systems where reliability, integration and business
+          logic matter as much as writing code. My current work sits at the
+          intersection of <strong>Python API development</strong>, enterprise
+          databases and the modernization of long-running financial systems.
+        </p>
+        <div class="about-card reveal">
+          <span class="card-label">CURRENT FOCUS</span>
+          <h3>Data-Driven Backend Systems</h3>
+          <p>Building REST APIs on top of legacy Oracle/PL/SQL logic and extending that same depository data into
+            ETL pipelines and reporting — moving from transactional systems into data engineering.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section dark-section">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 / EXPERIENCE</p>
+        <h2>Professional experience</h2>
+      </div>
+      <article class="experience-card reveal">
+        <div class="experience-top">
+          <div>
+            <p class="role">Software Engineer — Backend</p>
+            <p class="company">Tata Consultancy Services · BFSI</p>
+          </div>
+          <span class="pill">Backend Engineering</span>
+        </div>
+        <div class="experience-body">
+          <p>
+            Working on the CDSL CDAS depository platform's Back Office team, building
+            and optimizing the creation, modification, and closure workflows for
+            Demat accounts in Oracle PL/SQL and Pro*C.
+          </p>
+          <div class="work-grid">
+            <div><span>01</span>
+              <h3>Account Lifecycle Logic</h3>
+              <p>Building PL/SQL packages, procedures and functions for Demat account creation, modification, and
+                closure.
+              </p>
+            </div>
+            <div><span>02</span>
+              <h3>Bulk Processing</h3>
+              <p>Built a bulk file-upload system processing 5,000+ Demat records per file with row-level error handling
+                and reprocessing support.</p>
+            </div>
+            <div><span>03</span>
+              <h3>Batch Optimization</h3>
+              <p>Optimized end-of-day batch jobs via fragment-based scheduling, cutting processing time for 100,000+
+                records from 15 minutes to 3.</p>
+            </div>
+            <div><span>04</span>
+              <h3>Async Processing</h3>
+              <p>Designed a daemon-based asynchronous processor for OBPP transactions to isolate real-time workloads
+                from batch operations.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 / TOOLKIT</p>
+        <h2>Technologies I work with</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill"><b>Python</b><span>Primary language</span></div>
+        <div class="skill"><b>FastAPI</b><span>REST API development</span></div>
+        <div class="skill"><b>Data Engineering</b><span>ETL pipelines & reporting</span></div>
+        <div class="skill"><b>Oracle</b><span>PL/SQL, python-oracledb</span></div>
+        <div class="skill"><b>Pro*C</b><span>Legacy transaction processing</span></div>
+        <div class="skill"><b>PostgreSQL</b><span>Analytics & reporting</span></div>
+        <div class="skill"><b>Pandas</b><span>ETL & data transformation</span></div>
+        <div class="skill"><b>Docker</b><span>Containerized deployment</span></div>
+        <div class="skill"><b>Git / GitHub</b><span>Version control</span></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 / PROJECTS</p>
+        <h2>Things I've been building</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project reveal">
+          <div class="project-number">01</div>
+          <h3>Validation Service API</h3>
+          <p>A REST API exposing existing PL/SQL validation logic as reusable HTTP endpoints, decoupling business
+            rules from the legacy database layer.</p>
+          <div class="tags"><span>FastAPI</span><span>Oracle PL/SQL</span></div>
+        </article>
+        <article class="project reveal">
+          <div class="project-number">02</div>
+          <h3>Depository Analytics Pipeline</h3>
+          <p>An ETL pipeline extracting depository account data from Oracle, transforming it in Pandas into a
+            fact/dimension reporting schema, and loading it into PostgreSQL for dashboarding.</p>
+          <div class="tags"><span>Python</span><span>Pandas</span><span>PostgreSQL</span></div>
+        </article>
+        <article class="project reveal">
+          <div class="project-number">03</div>
+          <h3>Federated Sentiment Analysis</h3>
+          <p>Privacy-preserving sentiment analysis using federated learning, accepted for publication at ICICI 2024.</p>
+          <div class="tags"><span>TensorFlow</span><span>Keras</span><span>Flower</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="architecture section">
+      <div class="section-head reveal">
+        <p class="eyebrow">05 / ARCHITECTURE</p>
+        <h2>From legacy to modern</h2>
+      </div>
+      <div class="flow reveal">
+        <div class="node"><small>LEGACY</small><strong>Pro*C / PL/SQL</strong></div>
+        <div class="connector">→</div>
+        <div class="node active"><small>API LAYER</small><strong>FastAPI</strong></div>
+        <div class="connector">→</div>
+        <div class="node"><small>SERVICE</small><strong>Python</strong></div>
+        <div class="connector">→</div>
+        <div class="node"><small>DATA</small><strong>Oracle</strong></div>
+      </div>
+      <p class="architecture-note reveal">Rebuilding real depository account workflows in a modern Python stack,
+        keeping business logic Python-native rather than in stored procedures.</p>
+    </section>
+
+    <section id="contact" class="contact section dark-section">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">06 / CONTACT</p>
+        <h2>Let's build something reliable.</h2>
+        <p>Interested in backend engineering, Python, API development or system modernization? I'd be happy to connect.
+        </p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:narekattu.rohan@gmail.com">Email me</a>
+          <a class="btn secondary light" href="https://github.com/narekatturohan-sketch" target="_blank"
+            rel="noreferrer">GitHub ↗</a>
+          <a class="btn secondary light" href="https://www.linkedin.com/in/rohan-mathew-888b00379" target="_blank"
+            rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Rohan Mathew</span><span>Built with HTML · CSS · JavaScript</span></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
